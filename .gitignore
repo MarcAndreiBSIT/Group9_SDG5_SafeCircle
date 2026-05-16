@@ -1,1 +1,7 @@
-
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.vcxproj.user
+Debug/
+x64/
