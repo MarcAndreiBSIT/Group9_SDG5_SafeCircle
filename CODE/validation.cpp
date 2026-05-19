@@ -27,9 +27,20 @@ bool isValidPin(string pin) {
 // checks if name is not empty
 bool isValidName(string name) {
 
+    // checks if name is empty
     if (name.empty()) {
         return false;
     }
 
+    // checks every character
+    for (int i = 0; i < name.length(); i++) {
+
+        // allows letters and spaces only
+        if (!isalpha(name[i]) && name[i] != ' ') {
+
+            return false;
+        }
+    }
+
     return true;
-}
+
